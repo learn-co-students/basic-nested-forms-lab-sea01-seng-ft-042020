@@ -21,7 +21,7 @@ class RecipesController < ApplicationController
   private
 
   def recipe_params
-    byebug
+    # byebug
     params.require(:recipe).permit(
       :title,
       ingredients_attributes: [
